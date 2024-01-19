@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Información de la IP del Cliente</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para el título */
+        h2 {
+            text-align: center; /* Centrar el texto */
+            color: #007BFF; /* Color azul */
+        }
+
+        /* Estilo personalizado para las cabeceras de la tabla */
+        .table thead th {
+            background-color: #FF69B4; /* Color rosa para las cabeceras */
+            color: #000; /* Texto en color negro */
+        }
+
+        /* Estilo personalizado para las filas alternas */
+        .table tbody tr:nth-child(even) {
+            background-color: #FFF; /* Fondo blanco para filas pares */
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #FFEBEB; /* Fondo rosa claro para filas impares */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Título centrado en color azul -->
+    <h2>Información de la IP del Cliente</h2>
+    <!-- Agrega la tabla con estilos personalizados -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IP</th>
+                <th>País</th>
+                <th>Continente</th>
+                <th>Zona Horaria</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Agrega filas con valores de muestra -->
+            <tr>
+                <td id="ip">-</td>
+        <td id="country_name">-</td>
+        <td id="continent_name">-</td>
+        <td id="current_time">-</td>
+      </tr>
+           
+        </tbody>
+    </table>
+</div>
+
+<!-- Agrega la referencia a Bootstrap JS y Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
